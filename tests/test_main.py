@@ -16,6 +16,10 @@ def test_process_user_data_missing_field():
     with pytest.raises(ValueError):
         process_user_data({"name": "Bob"})
 
+def test_will_fail():
+    assert 1 + 1 == 3  # intentional failure
+
+
 @pytest.mark.skip(reason="Skipping network request test for demo")
 def test_fetch_data_real_request():
     assert fetch_data("https://jsonplaceholder.typicode.com/todos/1")["id"] == 1

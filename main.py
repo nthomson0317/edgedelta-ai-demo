@@ -29,3 +29,7 @@ def fetch_data(url):
 def unused_function():
     # Dead code — never called
     print("This function is not used.")
+
+def divide(a, b):
+    return a / b  # No zero-division check
+
